@@ -46,8 +46,8 @@ L'application sera accessible sur `http://localhost:5173`.
 - [x] Il est possible d'ajuster la durée des sessions et pauses
 - [x] Le bouton Start/Stop contrôle le fonctionnement du timer
 - [x] Le bouton Reset remet toutes les valeurs à zéro
-- [ ] Changement automatique vers la pause après la session (à implémenter)
-- [ ] Signal sonore à la fin de chaque période (à implémenter)
+- [x] Changement automatique vers la pause après la session (à implémenter)
+- [x] Signal sonore à la fin de chaque période (à implémenter)
 
 
 
@@ -55,6 +55,6 @@ L'application sera accessible sur `http://localhost:5173`.
 
 Développé par **eadarak00**  
 
---
+
 
 > Ce projet fait partie du **certificat Frontend Libraries** de freeCodeCamp.
