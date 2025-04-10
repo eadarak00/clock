@@ -1,55 +1,60 @@
-# React + TypeScript + Vite
+# 25 + 5 Clock (Pomodoro Timer)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application de minuterie 25 + 5 développée avec **React + TypeScript**, respectant les spécifications de freeCodeCamp. Elle permet de gérer des sessions de travail et des pauses, en suivant la méthode Pomodoro.
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Réglage de la durée des **sessions de travail** (1 à 60 minutes)
+- Réglage de la durée des **pauses** (1 à 60 minutes)
+- Démarrage / pause du minuteur
+- Réinitialisation complète des valeurs à l'état initial
+- Affichage dynamique du temps restant au format `mm:ss`
 
-## Expanding the ESLint configuration
+## Aperçu
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Timer Preview](public/screenshot.png) 
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/ton-nom-utilisateur/clock.git
+   cd clock
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# clock
+3. **Démarrer le projet**
+   ```bash
+   npm run dev
+   ```
+
+L'application sera accessible sur `http://localhost:5173`.
+
+## Technologies utilisées
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+
+## Histoires utilisateur implémentées (freeCodeCamp)
+
+- [x] Le minuteur commence à la valeur affichée dans `#session-length`
+- [x] Il est possible d'ajuster la durée des sessions et pauses
+- [x] Le bouton Start/Stop contrôle le fonctionnement du timer
+- [x] Le bouton Reset remet toutes les valeurs à zéro
+- [ ] Changement automatique vers la pause après la session (à implémenter)
+- [ ] Signal sonore à la fin de chaque période (à implémenter)
+
+
+
+## Auteur
+
+Développé par **eadarak00**  
+
+--
+
+> Ce projet fait partie du **certificat Frontend Libraries** de freeCodeCamp.
