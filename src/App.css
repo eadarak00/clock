@@ -1,0 +1,118 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 15px;
+}
+
+.title {
+  font-size: 36px;
+  color: #4f46e5;
+  margin-bottom: 40px;
+}
+
+.length-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.control-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.control-box h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions button {
+  display: flex;               /* Ajouté */
+  justify-content: center;     /* Centrage horizontal */
+  align-items: center;         /* Centrage vertical */
+  font-size: 2rem;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  transition: background-color 0.2s;
+}
+
+.actions button:hover {
+  background-color: #c7d2fe;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+
+.timer-box{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.timer-label{
+  font-size: 1.2rem;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.time-left{
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.control-buttons{
+  display: flex;
+  gap: 10px;
+
+}
+
+.control-buttons button{
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
